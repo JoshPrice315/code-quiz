@@ -1,0 +1,43 @@
+  
+#btnOptionOne,
+#btnOptionTwo,
+#btnOptionThree,
+#btnOptionFour,
+#submit,
+#initials,
+#home,
+#scoreTable,
+#scoreHeader {
+  display: none;
+}
+
+body {
+  text-align: center;
+  background-image: url("../images/back2.jpg");
+  text-align: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.goon {
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 25px;
+  padding: 40px 0 30px 0;
+  z-index: 1;
+}
+#codeTitle {
+  font-size: 30px;
+}
+#description {
+  font-size: 16px;
+}
+
+#timer {
+  font-size: 30px;
+}
+
+#questionPrompt {
+  font-size: 22px;
+}

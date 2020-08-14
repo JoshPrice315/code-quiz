@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-light">
+    <span id="timer" class="navbar-brand mb-0 h1">Timer</span>
+  </nav>
+  <div class="container goon">
+    <div class="container" id="notScores">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <h1 id="codeTitle">Welcome to a Javascript Coding quiz!</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <p id="description">
+            To begin the quiz, press "start". To view highscores, press
+            "scores". Your score will be the remaining time when all 5 questions are completed. For every wrong answer,
+            15 seconds will be deducted from your total time bank. Goodluck!
+          </p>
+          <div class="col-sm-6">
+            <h2 id="timer"></h2>
+          </div>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <form class="questionForm">
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <p id="questionPrompt"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6" id="beginButtons">
+          <button class="btn btn-lg btn-primary" id="btnStart" type="button">
+            Start
+          </button>
+          <button class="btn btn-lg btn-primary" id="btnScore" type="button">
+            Scores
+          </button>
+
+          <div id="optionButtons">
+            <button class="btn btn-lg btn-primary" id="btnOptionOne" type="button"></button></br>
+            <button class="btn btn-lg btn-primary" id="btnOptionTwo" type="button"></button></br>
+            <button class="btn btn-lg btn-primary" id="btnOptionThree" type="button"></button></br>
+            <button class="btn btn-lg btn-primary" id="btnOptionFour" type="button"></button>
+          </div>
+          <input id="initials" type="text" placeholder="your initials here" /></br>
+          <button class="btn btn-lg btn-primary" id="submit" type="button">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <h2 id="scoreHeader">Highscores</h2>
+        <table id="scoreTable"></table>
+        <div class="container" id="Scores">
+          <button class="btn btn-lg btn-primary" id="home" type="button">
+            Home
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
